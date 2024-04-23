@@ -1,15 +1,72 @@
+body{
+    /* Ill either use the cbus blue or another color for the background and then change the text color in the heading to match the logo */
+    background-color: #fff;
+}
 .header{
     position: relative;
     text-align: center;
 }
+.heading{
+    font-family: "Prata", sans-serif;
+    color: rgb(0, 83, 155);
+}
+.headingSpan{
+    color: rgb(227, 27, 35);
+}
 .img{
     width: 100%;
+    border-radius: 5px;
 }
 .imgSrc{
     background-color: rgba(0, 0, 0, 50%);
-    padding: 0px 5px 3px 5px;
-    color: aliceblue;
+    padding: 0px 10px 3px 5px;
+    color: rgb(240, 248, 255, 0.75);
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 68px;
+    left: 1px;
+    font-size: small;
+    border-end-end-radius: 50px;
 }
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
