@@ -1,6 +1,6 @@
 body{
     /* Ill either use the cbus blue or another color for the background and then change the text color in the heading to match the logo */
-    background-color: #fff;
+    background-color: aliceblue;
 }
 .header{
     position: relative;
@@ -12,6 +12,33 @@ body{
 }
 .headingSpan{
     color: rgb(227, 27, 35);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn{
+    display: grid;
+    grid-template-rows: 2;
+    padding: 5px 5px 0px 10px;
+    margin: 0px 0px 0px 4px;
+    width: fit-content;
+    height: 60px;
+    background-color: rgb(227, 27, 35);
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.fa-stuff{
+    grid-row: 1;
+    font-size: xx-large;
+}
+.span2{
+    color: black;
 }
 .img{
     width: 100%;
@@ -27,46 +54,24 @@ body{
     font-size: small;
     border-end-end-radius: 50px;
 }
-.sidenav {
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0;
-    background-color: #111; 
-    overflow-x: hidden;
-    padding-top: 60px; 
-    transition: 0.5s; 
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+
+/* main */
+.art1{
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 9px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px;
+}
+.art2{
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 9px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px;
+}
+.art1 > p, .art2 > p{
+    text-align: center;
+}
